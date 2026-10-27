@@ -40,10 +40,10 @@ export default function LoginPage() {
         <Link href="/" className="login-logo">
           <img
             src="/buvcloud-logo.png"
-            alt="BUVCloud"
+            alt="BUV Cloud"
             className="login-logo-image"
           />
-          <span>BUVCloud</span>
+          <span>BUV Cloud</span>
         </Link>
 
         <p className="brand-caption">
@@ -72,7 +72,7 @@ export default function LoginPage() {
         </div>
 
         <p className="brand-footer">
-          © 2026 BUVCloud. All rights reserved.
+          © 2026 BUV INNOTECH PRIVATE LIMITED. All rights reserved.
         </p>
       </section>
 
@@ -83,10 +83,10 @@ export default function LoginPage() {
           <Link href="/" className="mobile-logo">
             <img
               src="/buvcloud-logo.png"
-              alt="BUVCloud"
+              alt="BUV Cloud"
               className="login-logo-image"
             />
-            <span>BUVCloud</span>
+            <span>BUV Cloud</span>
           </Link>
 
           <div className="form-heading">
@@ -162,7 +162,7 @@ export default function LoginPage() {
           </form>
 
           <p className="signup-prompt">
-            New to BUVCloud?{" "}
+            New to BUV Cloud?{" "}
             <Link href="/signup">Create an account</Link>
           </p>
 

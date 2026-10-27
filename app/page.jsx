@@ -60,12 +60,12 @@ export default function HomePage() {
           <Link href="/" className="buv-brand">
             <Image
               src="/images/buvcloud-globe.png"
-              alt="BUVCloud"
+              alt="BUV Cloud"
               width={46}
               height={46}
               priority
             />
-            <span>BUVCloud</span>
+            <span>BUV Cloud</span>
           </Link>
 
           <nav className="buv-nav" aria-label="Main navigation">
@@ -97,7 +97,7 @@ export default function HomePage() {
           </h1>
 
           <p className="hero-description">
-            BUVCloud helps businesses discover, protect and continuously
+            BUV Cloud helps businesses discover, protect and continuously
             monitor their cloud environments with an agentless, unified
             security platform.
           </p>
@@ -132,7 +132,7 @@ export default function HomePage() {
       {/* PLATFORM */}
       <section className="buv-platform" id="platform">
         <div className="platform-intro">
-          <p className="blue-label">BUVCLOUD PLATFORM</p>
+          <p className="blue-label">BUV CLOUD PLATFORM</p>
           <h2>Comprehensive Cloud Security for Modern Teams</h2>
           <p>
             Everything you need to discover, assess and mitigate risks across
@@ -234,7 +234,7 @@ export default function HomePage() {
       <section className="buv-benefits" id="solutions">
         <div className="benefits-inner">
           <div className="benefits-intro">
-            <p className="cyan-label">WHY BUVCLOUD?</p>
+            <p className="cyan-label">WHY BUV CLOUD?</p>
             <h2>Built for a Safer Digital Future</h2>
             <p>
               We believe cloud security should be simple, powerful and
@@ -324,7 +324,7 @@ export default function HomePage() {
                 width={40}
                 height={40}
               />
-              <span>BUVCloud</span>
+              <span>BUV Cloud</span>
             </Link>
             <p>
               Empowering organizations to build a safer, more resilient
@@ -354,7 +354,7 @@ export default function HomePage() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 BUVI TECHNOLOGY PRIVATE LIMITED. All rights reserved.</p>
+          <p>© 2026 BUV INNOTECH PRIVATE LIMITED. All rights reserved.</p>
           <div>
             <a href="#resources">Privacy Policy</a>
             <span>|</span>

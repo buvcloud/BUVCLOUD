@@ -71,10 +71,10 @@ export default function SignupPage() {
         <Link href="/" className="signup-logo">
           <img
             src="/buvcloud-logo.png"
-            alt="BUVCloud"
+            alt="BUV Cloud"
             className="signup-logo-image"
           />
-          <span>BUVCloud</span>
+          <span>BUV Cloud</span>
         </Link>
 
         <p className="signup-caption">
@@ -103,7 +103,7 @@ export default function SignupPage() {
         </div>
 
         <p className="signup-brand-footer">
-          © 2026 BUVCloud. All rights reserved.
+          © 2026 BUV INNOTECH PRIVATE LIMITED. All rights reserved.
         </p>
       </section>
 
@@ -117,7 +117,7 @@ export default function SignupPage() {
               alt="BUVCloud"
               className="signup-logo-image"
             />
-            <span>BUVCloud</span>
+            <span>BUV Cloud</span>
           </Link>
 
           <div className="signup-heading">
