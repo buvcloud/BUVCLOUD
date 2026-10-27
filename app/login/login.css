@@ -1,0 +1,393 @@
+
+/* Main login page layout */
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f5f8fc;
+  color: #10213b;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Left branding panel */
+.login-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 7%;
+  color: #fff;
+  background:
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(0, 137, 255, 0.22),
+      transparent 38%
+    ),
+    linear-gradient(145deg, #020918, #061a38 65%, #031027);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Brand logo */
+.login-logo,
+.mobile-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  width: fit-content;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+/* Actual BUVCloud image logo */
+.login-logo-image {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-caption {
+  margin-top: 12px;
+  color: #91aacb;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* Left panel content */
+.brand-message {
+  max-width: 530px;
+  margin: auto 0;
+  padding-block: 70px;
+}
+
+.brand-tag,
+.form-eyebrow {
+  color: #21b9ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand-message h1 {
+  margin: 22px 0;
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+.brand-message h1 span {
+  color: #45baff;
+}
+
+.brand-message > p {
+  max-width: 430px;
+  color: #b0c1d9;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.brand-points {
+  margin-top: 32px;
+}
+
+.brand-points p {
+  margin: 14px 0;
+  color: #d8e5f5;
+  font-size: 13px;
+}
+
+.brand-footer {
+  margin-bottom: 0;
+  color: #8298b8;
+  font-size: 11px;
+}
+
+/* Right login panel */
+.login-form-section {
+  display: grid;
+  place-items: center;
+  padding: 40px 24px;
+  background: #f5f8fc;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile logo is hidden on desktop */
+.mobile-logo {
+  display: none;
+  color: #082044;
+  margin-bottom: 32px;
+}
+
+.form-heading {
+  margin-bottom: 32px;
+}
+
+.form-heading h2 {
+  margin: 13px 0 10px;
+  color: #0b1b33;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.form-heading p {
+  color: #71819a;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 23px;
+}
+
+.form-group label,
+.password-label label {
+  display: block;
+  margin-bottom: 9px;
+  color: #203651;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form-group input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 49px;
+  padding: 0 14px;
+  border: 1px solid #d7e0ec;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #142b48;
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #1687ff;
+  box-shadow: 0 0 0 3px rgba(22, 135, 255, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #9aa8ba;
+}
+
+/* Password field */
+.password-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-label a,
+.signup-prompt a {
+  color: #087df0;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 65px;
+}
+
+.show-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #087df0;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Remember me checkbox */
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 4px 0 23px;
+  color: #53657e;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.remember-option input {
+  width: 15px;
+  height: 15px;
+  accent-color: #087df0;
+}
+
+/* Login button */
+.login-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(100deg, #087df0, #0758d9);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 93, 220, 0.16);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 11px 25px rgba(0, 93, 220, 0.25);
+}
+
+.login-message {
+  margin: 0 0 16px;
+  color: #b42318;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Signup and security note */
+.signup-prompt {
+  margin-top: 27px;
+  margin-bottom: 0;
+  color: #71819a;
+  text-align: center;
+  font-size: 12px;
+}
+
+.security-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  color: #8190a5;
+  font-size: 11px;
+}
+
+.security-note span {
+  color: #1687ff;
+  font-size: 17px;
+}
+
+/* Tablet and mobile responsive layout */
+@media (max-width: 850px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand {
+    display: none;
+  }
+
+  .login-form-section {
+    min-height: 100vh;
+    padding: 35px 24px;
+  }
+
+  .login-card {
+    max-width: 440px;
+  }
+
+  .mobile-logo {
+    display: inline-flex;
+  }
+
+  .form-heading h2 {
+    font-size: 27px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 400px) {
+  .login-form-section {
+    padding: 28px 20px;
+  }
+
+  .form-heading h2 {
+    font-size: 24px;
+  }
+
+  .mobile-logo {
+    margin-bottom: 24px;
+  }
+
+  .security-note {
+    margin-top: 24px;
+  }
+}
+
+/* Remove extra vertical space from login page */
+.login-page {
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Keep left panel within screen height */
+.login-brand {
+  min-height: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Reduce unnecessary space around left content */
+.brand-message {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-block: 20px;
+}
+
+/* Keep footer at the bottom without extra margin */
+.brand-footer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Prevent right panel from adding extra height */
+.login-form-section {
+  min-height: 0;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+@media (max-width: 850px) {
+  .login-page {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .login-form-section {
+    min-height: 100vh;
+    height: auto;
+  }
+}
