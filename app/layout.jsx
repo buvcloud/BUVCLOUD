@@ -1,32 +1,12 @@
 import "./page.css";
 
 export const metadata = {
-  metadataBase: new URL("https://buvcloud.com"),
-
-  title: {
-    default: "BUVCloud | Cloud Security & Cloud Solutions",
-    template: "%s | BUVCloud",
-  },
-
+  title: "BUVCloud | Cloud Security",
   description:
-    "BUVCloud helps businesses strengthen cloud security, improve visibility, and manage cloud infrastructure with confidence.",
-
+    "Secure your cloud. Move forward with confidence. BUVCloud helps businesses improve cloud security and visibility.",
+  metadataBase: new URL("https://buvcloud.com"),
   alternates: {
     canonical: "/",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  openGraph: {
-    title: "BUVCloud | Cloud Security & Cloud Solutions",
-    description:
-      "Secure your cloud. Move forward with confidence.",
-    url: "https://buvcloud.com",
-    siteName: "BUVCloud",
-    type: "website",
   },
 };
 
