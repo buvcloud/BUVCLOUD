@@ -22,7 +22,9 @@ export default function LoginPage() {
     }
 
     // Correct email format validation
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+   
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+
       setError("Please enter a valid email address.");
       return;
     }

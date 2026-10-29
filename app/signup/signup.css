@@ -1,6 +1,6 @@
 
 /* =========================================
-   BUVCloud Signup Page — Complete CSS
+   BUV Cloud Signup Page — Complete CSS
    ========================================= */
 
 * {
@@ -47,7 +47,7 @@
     );
 }
 
-/* BUVCloud logo and company name */
+/* BUV Cloud logo and company name */
 .signup-logo {
   display: inline-flex;
   align-items: center;

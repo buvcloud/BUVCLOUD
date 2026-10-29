@@ -1,4 +1,5 @@
 import "./page.css";
+import BiplIntro from "./BiplIntro";
 
 export const metadata = {
   title: "BUVCloud | Cloud Security",
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <BiplIntro />
+        {children}
+      </body>
     </html>
   );
 }

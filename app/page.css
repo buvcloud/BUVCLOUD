@@ -1,4 +1,4 @@
-/* ================= BUVCloud homepage ================= */
+/* ================= BUVCloud HOMEPAGE ================= */
 
 .buv-page {
   --navy: #020d1b;
@@ -20,7 +20,7 @@
   text-decoration: none;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 .buv-header {
   position: sticky;
@@ -106,7 +106,7 @@
   font-weight: 700;
 }
 
-/* HERO */
+/* ================= HERO SECTION ================= */
 
 .buv-hero {
   position: relative;
@@ -117,9 +117,15 @@
   align-items: center;
   gap: 15px;
   isolation: isolate;
+  overflow: hidden;
   background:
-    radial-gradient(ellipse at 75% 45%, rgba(0, 97, 255, 0.17), transparent 44%),
-    linear-gradient(110deg, #020d1b, #03152b 60%, #020b18);
+    radial-gradient(
+      ellipse at 73% 48%,
+      rgba(0, 100, 255, 0.16) 0%,
+      rgba(0, 55, 130, 0.06) 38%,
+      transparent 68%
+    ),
+    #020d1b;
 }
 
 .hero-content {
@@ -213,31 +219,56 @@
   min-width: 0;
   display: grid;
   place-items: center;
+  isolation: isolate;
+  background: transparent;
 }
 
 .hero-glow {
   position: absolute;
-  width: 70%;
+  z-index: 0;
+  width: 65%;
   aspect-ratio: 1;
   border-radius: 50%;
   background: #006dff;
   filter: blur(100px);
-  opacity: 0.17;
+  opacity: 0.14;
+  pointer-events: none;
 }
 
 .hero-globe {
   position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
-  height: auto;
+  max-width: 680px;
   max-height: 440px;
+  height: auto;
   object-fit: contain;
   background: transparent;
   mix-blend-mode: screen;
-  filter: brightness(0.92) saturate(1.15) drop-shadow(0 0 18px #006eff25);
+  filter:
+    brightness(1.05)
+    saturate(1.15)
+    drop-shadow(0 0 22px rgba(0, 110, 255, 0.18));
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 45%,
+    rgba(0, 0, 0, 0.95) 57%,
+    rgba(0, 0, 0, 0.55) 72%,
+    transparent 86%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 45%,
+    rgba(0, 0, 0, 0.95) 57%,
+    rgba(0, 0, 0, 0.55) 72%,
+    transparent 86%
+  );
+  transform: translate(45px, -35px);
+  margin-bottom: 0;
 }
 
-/* PLATFORM */
+/* ================= PLATFORM ================= */
 
 .buv-platform {
   position: relative;
@@ -318,7 +349,7 @@
   line-height: 1.45;
 }
 
-/* DASHBOARD */
+/* ================= DASHBOARD ================= */
 
 .dashboard {
   min-width: 0;
@@ -430,9 +461,17 @@
   font-size: 17px;
 }
 
-.stat-red { color: #ff4558; }
-.stat-yellow { color: #ffc52e; }
-.stat-green { color: #1fe6b0; }
+.stat-red {
+  color: #ff4558;
+}
+
+.stat-yellow {
+  color: #ffc52e;
+}
+
+.stat-green {
+  color: #1fe6b0;
+}
 
 .chart-panel {
   margin-top: 12px;
@@ -495,7 +534,7 @@
   font-size: 8px;
 }
 
-/* BENEFITS */
+/* ================= BENEFITS ================= */
 
 .buv-benefits {
   position: relative;
@@ -573,7 +612,7 @@
   line-height: 1.5;
 }
 
-/* MOUNTAIN LANDSCAPE */
+/* ================= MOUNTAIN LANDSCAPE ================= */
 
 .mountain-scene {
   position: relative;
@@ -612,7 +651,7 @@
   box-shadow: 0 0 18px #078bff, 0 -8px 20px #078bff55;
 }
 
-/* ORBIT SECTION */
+/* ================= ORBIT SECTION ================= */
 
 .orbit-section {
   padding: 70px 7%;
@@ -676,9 +715,17 @@
   box-shadow: 0 0 8px #08d8ff;
 }
 
-.cross-one { transform: rotate(0deg); }
-.cross-two { transform: rotate(60deg); }
-.cross-three { transform: rotate(-60deg); }
+.cross-one {
+  transform: rotate(0deg);
+}
+
+.cross-two {
+  transform: rotate(60deg);
+}
+
+.cross-three {
+  transform: rotate(-60deg);
+}
 
 .orbit-center {
   position: relative;
@@ -760,7 +807,7 @@
   left: -2%;
 }
 
-/* RESOURCES */
+/* ================= RESOURCES ================= */
 
 .resources-section {
   padding: 42px 7%;
@@ -784,7 +831,7 @@
   line-height: 1.6;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 .buv-footer {
   padding: 25px 5% 0;
@@ -883,7 +930,7 @@
   color: #a6b6ca;
 }
 
-/* TABLET */
+/* ================= TABLET RESPONSIVE ================= */
 
 @media (max-width: 1100px) {
   .buv-header-inner {
@@ -938,7 +985,7 @@
   }
 }
 
-/* MOBILE */
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 760px) {
   .buv-header {
@@ -1004,6 +1051,7 @@
 
   .hero-globe {
     max-height: 340px;
+    transform: translate(20px, -15px);
   }
 
   .hero-trust {
@@ -1143,81 +1191,131 @@
   }
 }
 
-/* BUVCloud Hero Globe — cleaned CSS */
+/* ================= BIPL FULL-SCREEN INTRO ================= */
 
-.buv-hero {
-  background:
-    radial-gradient(
-      ellipse at 73% 48%,
-      rgba(0, 100, 255, 0.16) 0%,
-      rgba(0, 55, 130, 0.06) 38%,
-      transparent 68%
-    ),
-    #020d1b;
-  overflow: hidden;
+.bipl-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050816;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.5s ease,
+    visibility 0s linear 0s;
 }
 
-.hero-visual {
-  position: relative;
-  min-width: 0;
-  display: grid;
-  place-items: center;
-  isolation: isolate;
-  background: transparent;
+.bipl-intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  animation: biplLogoReveal 1s ease both;
 }
 
-.hero-globe {
-  position: relative;
-  z-index: 1;
+/* BIPL logo image */
+.bipl-intro-content img {
   display: block;
-  width: 100%;
-  max-width: 680px;
-  max-height: 440px;
+  width: 220px;
   height: auto;
   object-fit: contain;
-  background: transparent;
-  mix-blend-mode: screen;
-  filter: brightness(1.05) saturate(1.15)
-    drop-shadow(0 0 22px rgba(0, 110, 255, 0.18));
-
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    #000 45%,
-    rgba(0, 0, 0, 0.95) 57%,
-    rgba(0, 0, 0, 0.55) 72%,
-    transparent 86%
-  );
-
-  mask-image: radial-gradient(
-    ellipse at center,
-    #000 45%,
-    rgba(0, 0, 0, 0.95) 57%,
-    rgba(0, 0, 0, 0.55) 72%,
-    transparent 86%
-  );
 }
 
-.hero-glow {
-  position: absolute;
-  z-index: 0;
-  width: 65%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #006dff;
-  filter: blur(100px);
-  opacity: 0.14;
-  pointer-events: none;
+/* Company name */
+.bipl-company-name {
+  margin-top: 22px;
+  color: #ffffff;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  animation: biplTextReveal 0.8s ease-out 0.3s both;
 }
 
-@media (max-width: 760px) {
-  .hero-globe {
-    max-height: 340px;
+/* Company tagline */
+.bipl-tagline {
+  margin-top: 10px;
+  color: #08d8ff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  animation: biplTextReveal 0.8s ease-out 0.5s both;
+}
+
+/* Logo entrance animation */
+@keyframes biplLogoReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
   }
 }
-.hero-globe {
-  transform: translateY(-35px);
-  margin-bottom: 0;
+
+/* Text entrance animation */
+@keyframes biplTextReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.hero-globe {
-  transform: translate(45px, -35px);
+
+/* Intro exit animation
+   React adds this class after 1.5 seconds */
+.bipl-intro-exit {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.5s ease,
+    visibility 0s linear 0.5s;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .bipl-intro-content {
+    padding: 18px;
+  }
+
+  .bipl-intro-content img {
+    width: 170px;
+  }
+
+  .bipl-company-name {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .bipl-tagline {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bipl-intro-content,
+  .bipl-company-name,
+  .bipl-tagline {
+    animation: none;
+  }
+
+  .bipl-intro,
+  .bipl-intro-exit {
+    transition: none;
+  }
 }
